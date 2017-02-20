@@ -35,6 +35,7 @@
             this.MagickerRadioButton = new System.Windows.Forms.RadioButton();
             this.CultistRadioButton = new System.Windows.Forms.RadioButton();
             this.HealthTextBox = new System.Windows.Forms.TextBox();
+            this.HPlabel = new System.Windows.Forms.Label();
             this.JobGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // JobGroupBox
             // 
@@ -111,10 +113,20 @@
             this.HealthTextBox.TabIndex = 5;
             this.HealthTextBox.TextChanged += new System.EventHandler(this.HealthTextBox_TextChanged);
             // 
+            // HPlabel
+            // 
+            this.HPlabel.AutoSize = true;
+            this.HPlabel.Location = new System.Drawing.Point(346, 110);
+            this.HPlabel.Name = "HPlabel";
+            this.HPlabel.Size = new System.Drawing.Size(92, 17);
+            this.HPlabel.TabIndex = 6;
+            this.HPlabel.Text = "Health Points";
+            // 
             // JobForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(641, 508);
+            this.Controls.Add(this.HPlabel);
             this.Controls.Add(this.HealthTextBox);
             this.Controls.Add(this.JobGroupBox);
             this.Controls.Add(this.NextButton);
@@ -138,5 +150,6 @@
         private System.Windows.Forms.RadioButton RogueRadioButton;
         private System.Windows.Forms.RadioButton SoldierRadioButton;
         private System.Windows.Forms.TextBox HealthTextBox;
+        private System.Windows.Forms.Label HPlabel;
     }
 }

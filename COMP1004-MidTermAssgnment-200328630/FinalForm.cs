@@ -12,9 +12,13 @@ namespace COMP1004_MidTermAssgnment_200328630
 {
     public partial class FinalForm : Form
     {
+        public JobForm previousForm { get; set; }
+
         public FinalForm()
         {
             InitializeComponent();
         }
+
+       
     }
 }
