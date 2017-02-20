@@ -56,7 +56,7 @@ namespace COMP1004_MidTermAssgnment_200328630
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Character character = new Character();
+            Character character = Program.character;
 
             character.Strength = STRTextBox.Text;
             character.Dexterity = DEXTextBox.Text;
