@@ -15,6 +15,11 @@ namespace COMP1004_MidTermAssgnment_200328630
 
         public RaceForm previousForm;
 
+        private string _soldierHealth = "30";
+        private string _rogueHealth = "28";
+        private string _magickerHealth = "15";
+        private string _cultistHealth = "24";
+
 
         public JobForm()
         {
@@ -25,19 +30,19 @@ namespace COMP1004_MidTermAssgnment_200328630
         {
             if (SoldierRadioButton.Checked)
             {
-                HealthTextBox.Text = "30" + Program.Character.Endurance;
+                HealthTextBox.Text = _soldierHealth + Program.Character.Endurance;
             }
             else if (RogueRadioButton.Checked)
             {
-                HealthTextBox.Text = "28" + Program.Character.Dexterity;
+                HealthTextBox.Text = _rogueHealth + Program.Character.Dexterity;
             }
             else if (MagickerRadioButton.Checked)
             {
-                HealthTextBox.Text = "15" + Program.Character.Intelligence;
+                HealthTextBox.Text = _magickerHealth + Program.Character.Intelligence;
             }
             else if (CultistRadioButton.Checked)
             {
-                HealthTextBox.Text = "24" + Program.Character.Charisma;
+                HealthTextBox.Text = _cultistHealth + Program.Character.Charisma;
             }
         }
 
@@ -54,6 +59,26 @@ namespace COMP1004_MidTermAssgnment_200328630
             finalForm.previousForm = this;
 
             finalForm.Show();
+        }
+
+        private void SoldierRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RogueRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MagickerRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CultistRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

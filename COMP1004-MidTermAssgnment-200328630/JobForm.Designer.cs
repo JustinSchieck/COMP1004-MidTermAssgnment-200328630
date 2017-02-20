@@ -74,6 +74,7 @@
             this.SoldierRadioButton.TabStop = true;
             this.SoldierRadioButton.Text = "Soldier";
             this.SoldierRadioButton.UseVisualStyleBackColor = true;
+            this.SoldierRadioButton.CheckedChanged += new System.EventHandler(this.SoldierRadioButton_CheckedChanged);
             // 
             // RogueRadioButton
             // 
@@ -84,6 +85,7 @@
             this.RogueRadioButton.TabIndex = 1;
             this.RogueRadioButton.Text = "Rogue";
             this.RogueRadioButton.UseVisualStyleBackColor = true;
+            this.RogueRadioButton.CheckedChanged += new System.EventHandler(this.RogueRadioButton_CheckedChanged);
             // 
             // MagickerRadioButton
             // 
@@ -94,6 +96,7 @@
             this.MagickerRadioButton.TabIndex = 2;
             this.MagickerRadioButton.Text = "Magicker";
             this.MagickerRadioButton.UseVisualStyleBackColor = true;
+            this.MagickerRadioButton.CheckedChanged += new System.EventHandler(this.MagickerRadioButton_CheckedChanged);
             // 
             // CultistRadioButton
             // 
@@ -104,6 +107,7 @@
             this.CultistRadioButton.TabIndex = 3;
             this.CultistRadioButton.Text = "Cultist";
             this.CultistRadioButton.UseVisualStyleBackColor = true;
+            this.CultistRadioButton.CheckedChanged += new System.EventHandler(this.CultistRadioButton_CheckedChanged);
             // 
             // HealthTextBox
             // 

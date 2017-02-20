@@ -18,7 +18,5 @@ namespace COMP1004_MidTermAssgnment_200328630
         {
             InitializeComponent();
         }
-
-       
     }
 }
