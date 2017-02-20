@@ -37,10 +37,41 @@ namespace COMP1004_MidTermAssgnment_200328630
             return result;
         }
 
+        private void GenerateAbilities()
+        {
+            STRTextBox.Text = this.Roll3D10().ToString();
+            DEXTextBox.Text = this.Roll3D10().ToString();
+            ENDTextBox.Text = this.Roll3D10().ToString();
+            INTTextBox.Text = this.Roll3D10().ToString();
+            PERTextBox.Text = this.Roll3D10().ToString();
+            CHATextBox.Text = this.Roll3D10().ToString();
+
+        }
+
         private void RollButton_Click(object sender, EventArgs e)
         {
             Debug.WriteLine(Roll3D10().ToString());
+            GenerateAbilities();
         }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Character character = new Character();
+
+            character.Strength = STRTextBox.Text;
+            character.Dexterity = DEXTextBox.Text;
+            character.Endurance = ENDTextBox.Text;
+            character.Intelligence = INTTextBox.Text;
+            character.Perception = PERTextBox.Text;
+            character.Charisma = CHATextBox.Text;
+
+            this.Hide();
+
+            RaceForm raceForm = new RaceForm();
+
+            raceForm.previousForm = this;
+
+            raceForm.Show();
+        }
     }
 }

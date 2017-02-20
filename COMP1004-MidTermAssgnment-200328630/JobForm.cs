@@ -12,9 +12,21 @@ namespace COMP1004_MidTermAssgnment_200328630
 {
     public partial class JobForm : Form
     {
+
+        public RaceForm previousForm;
+
+
         public JobForm()
         {
             InitializeComponent();
+        }
+
+        private void HealthTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (SoldierRadioButton.Checked)
+            {
+                HealthTextBox.Text = "30" + Program.Character.Endurance;
+            }
         }
     }
 }

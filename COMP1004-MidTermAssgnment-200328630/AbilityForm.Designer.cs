@@ -48,7 +48,7 @@
             // 
             this.CHATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CHATextBox.Location = new System.Drawing.Point(157, 322);
-            this.CHATextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CHATextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CHATextBox.Name = "CHATextBox";
             this.CHATextBox.Size = new System.Drawing.Size(132, 38);
             this.CHATextBox.TabIndex = 27;
@@ -57,7 +57,7 @@
             // 
             this.PERTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PERTextBox.Location = new System.Drawing.Point(157, 262);
-            this.PERTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PERTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PERTextBox.Name = "PERTextBox";
             this.PERTextBox.Size = new System.Drawing.Size(132, 38);
             this.PERTextBox.TabIndex = 26;
@@ -66,7 +66,7 @@
             // 
             this.INTTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.INTTextBox.Location = new System.Drawing.Point(157, 203);
-            this.INTTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.INTTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.INTTextBox.Name = "INTTextBox";
             this.INTTextBox.Size = new System.Drawing.Size(132, 38);
             this.INTTextBox.TabIndex = 25;
@@ -75,7 +75,7 @@
             // 
             this.ENDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ENDTextBox.Location = new System.Drawing.Point(157, 148);
-            this.ENDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ENDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ENDTextBox.Name = "ENDTextBox";
             this.ENDTextBox.Size = new System.Drawing.Size(132, 38);
             this.ENDTextBox.TabIndex = 24;
@@ -84,7 +84,7 @@
             // 
             this.DEXTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DEXTextBox.Location = new System.Drawing.Point(157, 92);
-            this.DEXTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DEXTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DEXTextBox.Name = "DEXTextBox";
             this.DEXTextBox.Size = new System.Drawing.Size(132, 38);
             this.DEXTextBox.TabIndex = 23;
@@ -93,7 +93,7 @@
             // 
             this.STRTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.STRTextBox.Location = new System.Drawing.Point(157, 33);
-            this.STRTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.STRTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.STRTextBox.Name = "STRTextBox";
             this.STRTextBox.Size = new System.Drawing.Size(132, 38);
             this.STRTextBox.TabIndex = 22;
@@ -167,17 +167,18 @@
             // NextButton
             // 
             this.NextButton.Location = new System.Drawing.Point(509, 446);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(4);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(100, 28);
             this.NextButton.TabIndex = 15;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // RollButton
             // 
             this.RollButton.Location = new System.Drawing.Point(39, 446);
-            this.RollButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RollButton.Margin = new System.Windows.Forms.Padding(4);
             this.RollButton.Name = "RollButton";
             this.RollButton.Size = new System.Drawing.Size(100, 28);
             this.RollButton.TabIndex = 14;
@@ -203,7 +204,7 @@
             this.Controls.Add(this.STRLabel);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RollButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AbilityForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roll Your Abilities";

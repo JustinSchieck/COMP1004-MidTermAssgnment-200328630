@@ -52,6 +52,7 @@
     <Compile Include="AbilityForm.Designer.cs">
       <DependentUpon>AbilityForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Character.cs" />
     <Compile Include="FinalForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,6 +8,10 @@ namespace COMP1004_MidTermAssgnment_200328630
 {
     static class Program
     {
+        internal static Character character;
+
+        public static Character Character { get; internal set; }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
