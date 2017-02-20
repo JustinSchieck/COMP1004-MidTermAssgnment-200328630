@@ -46,6 +46,8 @@ namespace COMP1004_MidTermAssgnment_200328630
             PERTextBox.Text = this.Roll3D10().ToString();
             CHATextBox.Text = this.Roll3D10().ToString();
 
+
+
         }
 
         private void RollButton_Click(object sender, EventArgs e)

@@ -15,10 +15,17 @@ namespace COMP1004_MidTermAssgnment_200328630
 
         public RaceForm previousForm;
 
-        private string _soldierHealth = "30";
-        private string _rogueHealth = "28";
-        private string _magickerHealth = "15";
-        private string _cultistHealth = "24";
+        private int _soldierHealth = 30;
+        private int _rogueHealth = 28;
+        private int _magickerHealth = 15;
+        private int _cultistHealth = 24;
+
+    
+        private int _DexterityHealthMod = Convert.ToInt32(Program.character.Dexterity);
+        private int _EnduranceHealthMod = Convert.ToInt32(Program.character.Endurance);
+        private int _IntellegenceHealthMod = Convert.ToInt32(Program.character.Intelligence);
+        private int _CharismaHealthMod = Convert.ToInt32(Program.character.Charisma);
+
 
 
         public JobForm()
@@ -26,25 +33,6 @@ namespace COMP1004_MidTermAssgnment_200328630
             InitializeComponent();
         }
 
-        private void HealthTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (SoldierRadioButton.Checked)
-            {
-                HealthTextBox.Text = _soldierHealth + Program.Character.Endurance;
-            }
-            else if (RogueRadioButton.Checked)
-            {
-                HealthTextBox.Text = _rogueHealth + Program.Character.Dexterity;
-            }
-            else if (MagickerRadioButton.Checked)
-            {
-                HealthTextBox.Text = _magickerHealth + Program.Character.Intelligence;
-            }
-            else if (CultistRadioButton.Checked)
-            {
-                HealthTextBox.Text = _cultistHealth + Program.Character.Charisma;
-            }
-        }
 
         private void NextButton_Click(object sender, EventArgs e)
         {
@@ -63,22 +51,22 @@ namespace COMP1004_MidTermAssgnment_200328630
 
         private void SoldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            HealthTextBox.Text = (_soldierHealth + _EnduranceHealthMod).ToString();
         }
 
         private void RogueRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            HealthTextBox.Text = (_rogueHealth + _DexterityHealthMod).ToString();
         }
 
         private void MagickerRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            HealthTextBox.Text = (_magickerHealth + _IntellegenceHealthMod).ToString();
         }
 
         private void CultistRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            HealthTextBox.Text = (_cultistHealth + _CharismaHealthMod).ToString();
         }
     }
 }
