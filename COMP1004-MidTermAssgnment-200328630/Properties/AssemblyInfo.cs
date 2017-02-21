@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("COMP1004_MidTermAssgnment_200328630")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Midterm for Comp1004 Character Generator for DND and other rpg based games.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("COMP1004_MidTermAssgnment_200328630")]
+[assembly: AssemblyCompany("JS Industries")]
+[assembly: AssemblyProduct("Character Generator")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("JS")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

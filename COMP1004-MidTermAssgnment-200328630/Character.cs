@@ -22,5 +22,14 @@ namespace COMP1004_MidTermAssgnment_200328630
         public string Race { get; set; }
 
         public string Health { get; set; }
+
+        public string Name { get; set; }
+
+        public string Age { get; set; }
+
+        public string Height { get; set; }
+
+        public string Weight { get; set; }
+
     }
 }

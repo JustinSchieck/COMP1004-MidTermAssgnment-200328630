@@ -75,5 +75,10 @@ namespace COMP1004_MidTermAssgnment_200328630
 
             raceForm.Show();
         }
+
+        public void Stats()
+        {
+
+        }
     }
 }

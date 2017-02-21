@@ -55,12 +55,12 @@ namespace COMP1004_MidTermAssgnment_200328630
 
             RacialBonusTextBox.Text = "Increase all abilities by 10";
             
-            _StrengthMod = _StrengthMod + 10;
-            _DexterityMod = _DexterityMod + 10;
-            _EnduranceMod = _EnduranceMod + 10;
-            _IntellegenceMod = _IntellegenceMod + 10;
-            _PerceptionMod = _PerceptionMod + 10;
-            _CharismaMod = _CharismaMod + 10;
+            _StrengthMod = _StrengthMod + 5;
+            _DexterityMod = _DexterityMod + 5;
+            _EnduranceMod = _EnduranceMod + 5;
+            _IntellegenceMod = _IntellegenceMod + 5;
+            _PerceptionMod = _PerceptionMod + 5;
+            _CharismaMod = _CharismaMod + 5;
 
           
             this._selectedRace = selectedRace.Text;

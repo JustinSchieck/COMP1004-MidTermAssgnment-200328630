@@ -56,7 +56,7 @@
             this.JobGroupBox.Controls.Add(this.MagickerRadioButton);
             this.JobGroupBox.Controls.Add(this.RogueRadioButton);
             this.JobGroupBox.Controls.Add(this.SoldierRadioButton);
-            this.JobGroupBox.Location = new System.Drawing.Point(43, 53);
+            this.JobGroupBox.Location = new System.Drawing.Point(43, 111);
             this.JobGroupBox.Name = "JobGroupBox";
             this.JobGroupBox.Size = new System.Drawing.Size(230, 235);
             this.JobGroupBox.TabIndex = 4;
@@ -111,15 +111,16 @@
             // 
             // HealthTextBox
             // 
-            this.HealthTextBox.Location = new System.Drawing.Point(334, 157);
+            this.HealthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HealthTextBox.Location = new System.Drawing.Point(334, 215);
             this.HealthTextBox.Name = "HealthTextBox";
-            this.HealthTextBox.Size = new System.Drawing.Size(220, 22);
+            this.HealthTextBox.Size = new System.Drawing.Size(220, 38);
             this.HealthTextBox.TabIndex = 5;
             // 
             // HPlabel
             // 
             this.HPlabel.AutoSize = true;
-            this.HPlabel.Location = new System.Drawing.Point(346, 110);
+            this.HPlabel.Location = new System.Drawing.Point(399, 181);
             this.HPlabel.Name = "HPlabel";
             this.HPlabel.Size = new System.Drawing.Size(92, 17);
             this.HPlabel.TabIndex = 6;
@@ -128,7 +129,7 @@
             // JobForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(641, 508);
+            this.ClientSize = new System.Drawing.Size(688, 519);
             this.Controls.Add(this.HPlabel);
             this.Controls.Add(this.HealthTextBox);
             this.Controls.Add(this.JobGroupBox);

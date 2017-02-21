@@ -37,11 +37,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CharacterInfoGroupBox2 = new System.Windows.Forms.GroupBox();
             this.HPLabel = new System.Windows.Forms.Label();
             this.RaceLabel = new System.Windows.Forms.Label();
             this.JobLabel = new System.Windows.Forms.Label();
-            this.HPTextBox = new System.Windows.Forms.TextBox();
+            this.HealthTextBox = new System.Windows.Forms.TextBox();
             this.RaceTextBox = new System.Windows.Forms.TextBox();
             this.JobTextBox = new System.Windows.Forms.TextBox();
             this.AbilitiesGroupBox = new System.Windows.Forms.GroupBox();
@@ -57,7 +57,6 @@
             this.ENDLabel = new System.Windows.Forms.Label();
             this.DEXLabel = new System.Windows.Forms.Label();
             this.STRLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,11 +65,13 @@
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
+            this.FontDialog = new System.Windows.Forms.FontDialog();
             this.CharacterInfoGroupBox.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.CharacterInfoGroupBox2.SuspendLayout();
             this.AbilitiesGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // CharacterInfoGroupBox
@@ -154,20 +155,19 @@
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 0;
             // 
-            // groupBox2
+            // CharacterInfoGroupBox2
             // 
-            this.groupBox2.Controls.Add(this.HPLabel);
-            this.groupBox2.Controls.Add(this.RaceLabel);
-            this.groupBox2.Controls.Add(this.JobLabel);
-            this.groupBox2.Controls.Add(this.HPTextBox);
-            this.groupBox2.Controls.Add(this.RaceTextBox);
-            this.groupBox2.Controls.Add(this.JobTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(481, 62);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(359, 173);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.CharacterInfoGroupBox2.Controls.Add(this.HPLabel);
+            this.CharacterInfoGroupBox2.Controls.Add(this.RaceLabel);
+            this.CharacterInfoGroupBox2.Controls.Add(this.JobLabel);
+            this.CharacterInfoGroupBox2.Controls.Add(this.HealthTextBox);
+            this.CharacterInfoGroupBox2.Controls.Add(this.RaceTextBox);
+            this.CharacterInfoGroupBox2.Controls.Add(this.JobTextBox);
+            this.CharacterInfoGroupBox2.Location = new System.Drawing.Point(454, 62);
+            this.CharacterInfoGroupBox2.Name = "CharacterInfoGroupBox2";
+            this.CharacterInfoGroupBox2.Size = new System.Drawing.Size(386, 173);
+            this.CharacterInfoGroupBox2.TabIndex = 1;
+            this.CharacterInfoGroupBox2.TabStop = false;
             // 
             // HPLabel
             // 
@@ -196,13 +196,13 @@
             this.JobLabel.TabIndex = 3;
             this.JobLabel.Text = "Job:";
             // 
-            // HPTextBox
+            // HealthTextBox
             // 
-            this.HPTextBox.Location = new System.Drawing.Point(145, 134);
-            this.HPTextBox.Name = "HPTextBox";
-            this.HPTextBox.ReadOnly = true;
-            this.HPTextBox.Size = new System.Drawing.Size(186, 22);
-            this.HPTextBox.TabIndex = 2;
+            this.HealthTextBox.Location = new System.Drawing.Point(145, 134);
+            this.HealthTextBox.Name = "HealthTextBox";
+            this.HealthTextBox.ReadOnly = true;
+            this.HealthTextBox.Size = new System.Drawing.Size(186, 22);
+            this.HealthTextBox.TabIndex = 2;
             // 
             // RaceTextBox
             // 
@@ -243,7 +243,7 @@
             // 
             // CHATextBox
             // 
-            this.CHATextBox.Location = new System.Drawing.Point(126, 371);
+            this.CHATextBox.Location = new System.Drawing.Point(166, 371);
             this.CHATextBox.Name = "CHATextBox";
             this.CHATextBox.ReadOnly = true;
             this.CHATextBox.Size = new System.Drawing.Size(100, 22);
@@ -251,7 +251,7 @@
             // 
             // PERTextBox
             // 
-            this.PERTextBox.Location = new System.Drawing.Point(126, 310);
+            this.PERTextBox.Location = new System.Drawing.Point(166, 310);
             this.PERTextBox.Name = "PERTextBox";
             this.PERTextBox.ReadOnly = true;
             this.PERTextBox.Size = new System.Drawing.Size(100, 22);
@@ -259,7 +259,7 @@
             // 
             // INTTextBox
             // 
-            this.INTTextBox.Location = new System.Drawing.Point(126, 247);
+            this.INTTextBox.Location = new System.Drawing.Point(166, 247);
             this.INTTextBox.Name = "INTTextBox";
             this.INTTextBox.ReadOnly = true;
             this.INTTextBox.Size = new System.Drawing.Size(100, 22);
@@ -267,7 +267,7 @@
             // 
             // ENDTextBox
             // 
-            this.ENDTextBox.Location = new System.Drawing.Point(126, 183);
+            this.ENDTextBox.Location = new System.Drawing.Point(166, 183);
             this.ENDTextBox.Name = "ENDTextBox";
             this.ENDTextBox.ReadOnly = true;
             this.ENDTextBox.Size = new System.Drawing.Size(100, 22);
@@ -275,7 +275,7 @@
             // 
             // DEXTextBox
             // 
-            this.DEXTextBox.Location = new System.Drawing.Point(126, 118);
+            this.DEXTextBox.Location = new System.Drawing.Point(166, 118);
             this.DEXTextBox.Name = "DEXTextBox";
             this.DEXTextBox.ReadOnly = true;
             this.DEXTextBox.Size = new System.Drawing.Size(100, 22);
@@ -283,7 +283,7 @@
             // 
             // STRTextBox
             // 
-            this.STRTextBox.Location = new System.Drawing.Point(126, 51);
+            this.STRTextBox.Location = new System.Drawing.Point(166, 51);
             this.STRTextBox.Name = "STRTextBox";
             this.STRTextBox.ReadOnly = true;
             this.STRTextBox.Size = new System.Drawing.Size(100, 22);
@@ -292,7 +292,7 @@
             // CHALabel
             // 
             this.CHALabel.AutoSize = true;
-            this.CHALabel.Location = new System.Drawing.Point(5, 371);
+            this.CHALabel.Location = new System.Drawing.Point(45, 371);
             this.CHALabel.Name = "CHALabel";
             this.CHALabel.Size = new System.Drawing.Size(36, 17);
             this.CHALabel.TabIndex = 5;
@@ -301,7 +301,7 @@
             // PERLabel
             // 
             this.PERLabel.AutoSize = true;
-            this.PERLabel.Location = new System.Drawing.Point(7, 310);
+            this.PERLabel.Location = new System.Drawing.Point(45, 310);
             this.PERLabel.Name = "PERLabel";
             this.PERLabel.Size = new System.Drawing.Size(36, 17);
             this.PERLabel.TabIndex = 4;
@@ -310,7 +310,7 @@
             // INTLabel
             // 
             this.INTLabel.AutoSize = true;
-            this.INTLabel.Location = new System.Drawing.Point(10, 247);
+            this.INTLabel.Location = new System.Drawing.Point(45, 247);
             this.INTLabel.Name = "INTLabel";
             this.INTLabel.Size = new System.Drawing.Size(30, 17);
             this.INTLabel.TabIndex = 3;
@@ -319,7 +319,7 @@
             // ENDLabel
             // 
             this.ENDLabel.AutoSize = true;
-            this.ENDLabel.Location = new System.Drawing.Point(10, 183);
+            this.ENDLabel.Location = new System.Drawing.Point(45, 183);
             this.ENDLabel.Name = "ENDLabel";
             this.ENDLabel.Size = new System.Drawing.Size(37, 17);
             this.ENDLabel.TabIndex = 2;
@@ -328,7 +328,7 @@
             // DEXLabel
             // 
             this.DEXLabel.AutoSize = true;
-            this.DEXLabel.Location = new System.Drawing.Point(7, 118);
+            this.DEXLabel.Location = new System.Drawing.Point(45, 118);
             this.DEXLabel.Name = "DEXLabel";
             this.DEXLabel.Size = new System.Drawing.Size(36, 17);
             this.DEXLabel.TabIndex = 1;
@@ -337,19 +337,11 @@
             // STRLabel
             // 
             this.STRLabel.AutoSize = true;
-            this.STRLabel.Location = new System.Drawing.Point(13, 51);
+            this.STRLabel.Location = new System.Drawing.Point(45, 51);
             this.STRLabel.Name = "STRLabel";
             this.STRLabel.Size = new System.Drawing.Size(36, 17);
             this.STRLabel.TabIndex = 0;
             this.STRLabel.Text = "STR";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(454, 264);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(386, 391);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -376,14 +368,16 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -396,8 +390,9 @@
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fontToolStripMenuItem.Text = "&Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -410,16 +405,31 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // CharacterPictureBox
+            // 
+            this.CharacterPictureBox.Location = new System.Drawing.Point(454, 264);
+            this.CharacterPictureBox.Name = "CharacterPictureBox";
+            this.CharacterPictureBox.Size = new System.Drawing.Size(386, 391);
+            this.CharacterPictureBox.TabIndex = 3;
+            this.CharacterPictureBox.TabStop = false;
+            // 
+            // FontDialog
+            // 
+            this.FontDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.FontDialog.MaxSize = 18;
+            this.FontDialog.MinSize = 10;
             // 
             // FinalForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(878, 667);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CharacterPictureBox);
             this.Controls.Add(this.AbilitiesGroupBox);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.CharacterInfoGroupBox2);
             this.Controls.Add(this.CharacterInfoGroupBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -427,15 +437,16 @@
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your Character Selections";
+            this.Load += new System.EventHandler(this.FinalForm_Load);
             this.CharacterInfoGroupBox.ResumeLayout(false);
             this.CharacterInfoGroupBox.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.CharacterInfoGroupBox2.ResumeLayout(false);
+            this.CharacterInfoGroupBox2.PerformLayout();
             this.AbilitiesGroupBox.ResumeLayout(false);
             this.AbilitiesGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,11 +463,11 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox CharacterInfoGroupBox2;
         private System.Windows.Forms.Label HPLabel;
         private System.Windows.Forms.Label RaceLabel;
         private System.Windows.Forms.Label JobLabel;
-        private System.Windows.Forms.TextBox HPTextBox;
+        private System.Windows.Forms.TextBox HealthTextBox;
         private System.Windows.Forms.TextBox RaceTextBox;
         private System.Windows.Forms.TextBox JobTextBox;
         private System.Windows.Forms.GroupBox AbilitiesGroupBox;
@@ -472,7 +483,7 @@
         private System.Windows.Forms.Label ENDLabel;
         private System.Windows.Forms.Label DEXLabel;
         private System.Windows.Forms.Label STRLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox CharacterPictureBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
@@ -481,5 +492,6 @@
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.FontDialog FontDialog;
     }
 }
