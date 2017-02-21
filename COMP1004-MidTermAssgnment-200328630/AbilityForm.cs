@@ -11,6 +11,15 @@ using System.Windows.Forms;
 
 namespace COMP1004_MidTermAssgnment_200328630
 {
+
+    /// <summary>
+    /// Program: Midterm DND Character Creator
+    /// Name: Justin Schieck
+    /// StudentID: 200328630
+    /// App Creation Date: Feb 20, 2013
+    /// App Desc: Creates a character used for RPG adventures
+    /// </summary>
+    /// 
     public partial class AbilityForm : Form
     {
         // Random Number object
@@ -37,6 +46,7 @@ namespace COMP1004_MidTermAssgnment_200328630
             return result;
         }
 
+        //In essence rolls 3, 10 sided die and inputs the string value into appropriate text boxes
         private void GenerateAbilities()
         {
          
@@ -49,12 +59,14 @@ namespace COMP1004_MidTermAssgnment_200328630
             
       }
 
+        // Calls the Generate Abilities method
         private void RollButton_Click(object sender, EventArgs e)
         {
             Debug.WriteLine(Roll3D10().ToString());
             GenerateAbilities();
         }
 
+        //Inputs the proper information to Character.cs then switches the forms. Uses try Catch for validation
         private void NextButton_Click(object sender, EventArgs e)
         {
             Character character = Program.character;
@@ -94,11 +106,14 @@ namespace COMP1004_MidTermAssgnment_200328630
                     throw new Exception();
                 }
             }
-            catch(Exception)
+            //Catches if line is blank and asks to fill with a response in text boxes.
+            catch(Exception) 
             {
                 MessageBox.Show("Please fill in a valid Response or press roll");
                 return;
             }
+
+            //Hides current form and moves to the next form in order.
             this.Hide();
 
             RaceForm raceForm = new RaceForm();
@@ -106,11 +121,6 @@ namespace COMP1004_MidTermAssgnment_200328630
             raceForm.previousForm = this;
 
             raceForm.Show();
-        }
-
-        public void Stats()
-        {
-
         }
     }
 }
