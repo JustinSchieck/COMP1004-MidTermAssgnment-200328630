@@ -13,7 +13,7 @@ namespace COMP1004_MidTermAssgnment_200328630
     public partial class RaceForm : Form
     {
 
-
+        
         public AbilityForm previousForm;
         private string _selectedRace;
 
@@ -29,9 +29,6 @@ namespace COMP1004_MidTermAssgnment_200328630
         {
             InitializeComponent();
         }
-
-
-
 
         private void NextButton_Click(object sender, EventArgs e)
         {
@@ -92,7 +89,7 @@ namespace COMP1004_MidTermAssgnment_200328630
             this._selectedRace = selectedRace.Text;
             
         }
-
+        //Radio button for the Halfling Option
         private void HalflingRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Halfling2;
@@ -106,6 +103,8 @@ namespace COMP1004_MidTermAssgnment_200328630
             this._selectedRace = selectedRace.Text;
            
         }
+
+        
     }
 }
 

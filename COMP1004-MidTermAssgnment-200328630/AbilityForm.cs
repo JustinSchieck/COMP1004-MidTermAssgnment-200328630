@@ -39,16 +39,15 @@ namespace COMP1004_MidTermAssgnment_200328630
 
         private void GenerateAbilities()
         {
-            STRTextBox.Text = this.Roll3D10().ToString();
-            DEXTextBox.Text = this.Roll3D10().ToString();
-            ENDTextBox.Text = this.Roll3D10().ToString();
-            INTTextBox.Text = this.Roll3D10().ToString();
-            PERTextBox.Text = this.Roll3D10().ToString();
-            CHATextBox.Text = this.Roll3D10().ToString();
-
-
-
-        }
+         
+                    STRTextBox.Text = this.Roll3D10().ToString();
+                    DEXTextBox.Text = this.Roll3D10().ToString();
+                    ENDTextBox.Text = this.Roll3D10().ToString();
+                    INTTextBox.Text = this.Roll3D10().ToString();
+                    PERTextBox.Text = this.Roll3D10().ToString();
+                    CHATextBox.Text = this.Roll3D10().ToString();
+            
+      }
 
         private void RollButton_Click(object sender, EventArgs e)
         {
@@ -60,13 +59,46 @@ namespace COMP1004_MidTermAssgnment_200328630
         {
             Character character = Program.character;
 
-            character.Strength = STRTextBox.Text;
-            character.Dexterity = DEXTextBox.Text;
-            character.Endurance = ENDTextBox.Text;
-            character.Intelligence = INTTextBox.Text;
-            character.Perception = PERTextBox.Text;
-            character.Charisma = CHATextBox.Text;
+            try
+            {
+                           
+                 character.Strength = STRTextBox.Text;
+                 character.Dexterity = DEXTextBox.Text;
+                 character.Endurance = ENDTextBox.Text;
+                 character.Intelligence = INTTextBox.Text;
+                 character.Perception = PERTextBox.Text;
+                 character.Charisma = CHATextBox.Text;
 
+                if(STRTextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+                if (DEXTextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+                if (ENDTextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+                if (INTTextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+                if (PERTextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+                if (CHATextBox.Text == "")
+                {
+                    throw new Exception();
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Please fill in a valid Response or press roll");
+                return;
+            }
             this.Hide();
 
             RaceForm raceForm = new RaceForm();

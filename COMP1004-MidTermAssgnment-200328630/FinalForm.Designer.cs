@@ -67,6 +67,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
             this.FontDialog = new System.Windows.Forms.FontDialog();
+            this.TitlesTextBox = new System.Windows.Forms.TextBox();
+            this.TitlesLabel = new System.Windows.Forms.Label();
             this.CharacterInfoGroupBox.SuspendLayout();
             this.CharacterInfoGroupBox2.SuspendLayout();
             this.AbilitiesGroupBox.SuspendLayout();
@@ -76,6 +78,8 @@
             // 
             // CharacterInfoGroupBox
             // 
+            this.CharacterInfoGroupBox.Controls.Add(this.TitlesLabel);
+            this.CharacterInfoGroupBox.Controls.Add(this.TitlesTextBox);
             this.CharacterInfoGroupBox.Controls.Add(this.WeightLabel);
             this.CharacterInfoGroupBox.Controls.Add(this.HeightLabel);
             this.CharacterInfoGroupBox.Controls.Add(this.AgeLabel);
@@ -86,7 +90,7 @@
             this.CharacterInfoGroupBox.Controls.Add(this.textBox1);
             this.CharacterInfoGroupBox.Location = new System.Drawing.Point(22, 62);
             this.CharacterInfoGroupBox.Name = "CharacterInfoGroupBox";
-            this.CharacterInfoGroupBox.Size = new System.Drawing.Size(437, 133);
+            this.CharacterInfoGroupBox.Size = new System.Drawing.Size(437, 166);
             this.CharacterInfoGroupBox.TabIndex = 0;
             this.CharacterInfoGroupBox.TabStop = false;
             this.CharacterInfoGroupBox.Text = "Character Information";
@@ -234,9 +238,9 @@
             this.AbilitiesGroupBox.Controls.Add(this.ENDLabel);
             this.AbilitiesGroupBox.Controls.Add(this.DEXLabel);
             this.AbilitiesGroupBox.Controls.Add(this.STRLabel);
-            this.AbilitiesGroupBox.Location = new System.Drawing.Point(22, 213);
+            this.AbilitiesGroupBox.Location = new System.Drawing.Point(22, 234);
             this.AbilitiesGroupBox.Name = "AbilitiesGroupBox";
-            this.AbilitiesGroupBox.Size = new System.Drawing.Size(392, 442);
+            this.AbilitiesGroupBox.Size = new System.Drawing.Size(392, 421);
             this.AbilitiesGroupBox.TabIndex = 2;
             this.AbilitiesGroupBox.TabStop = false;
             this.AbilitiesGroupBox.Text = "Abilities";
@@ -423,6 +427,22 @@
             this.FontDialog.MaxSize = 18;
             this.FontDialog.MinSize = 10;
             // 
+            // TitlesTextBox
+            // 
+            this.TitlesTextBox.Location = new System.Drawing.Point(85, 128);
+            this.TitlesTextBox.Name = "TitlesTextBox";
+            this.TitlesTextBox.Size = new System.Drawing.Size(100, 22);
+            this.TitlesTextBox.TabIndex = 8;
+            // 
+            // TitlesLabel
+            // 
+            this.TitlesLabel.AutoSize = true;
+            this.TitlesLabel.Location = new System.Drawing.Point(10, 133);
+            this.TitlesLabel.Name = "TitlesLabel";
+            this.TitlesLabel.Size = new System.Drawing.Size(46, 17);
+            this.TitlesLabel.TabIndex = 9;
+            this.TitlesLabel.Text = "Titles:";
+            // 
             // FinalForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -493,5 +513,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.FontDialog FontDialog;
+        private System.Windows.Forms.Label TitlesLabel;
+        private System.Windows.Forms.TextBox TitlesTextBox;
     }
 }
