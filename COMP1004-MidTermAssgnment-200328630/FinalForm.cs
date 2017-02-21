@@ -47,10 +47,9 @@ namespace COMP1004_MidTermAssgnment_200328630
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
-
+      
             fontDialog.ShowDialog();
         }
-
         //Fake Print Message
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -62,6 +61,22 @@ namespace COMP1004_MidTermAssgnment_200328630
         private void FinalForm_Load(object sender, EventArgs e)
         {
             Stats();
+            if(RaceTextBox.Text == "Human")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Human1;
+            }
+            else if (RaceTextBox.Text == "Elf")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Elf1;
+            }
+            else if (RaceTextBox.Text == "Dwarf")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Dwarf1;
+            }
+            else if(RaceTextBox.Text == "Halfling")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Halfling2;
+            }
         }
 
         //Function that fills appropriate text boxes

@@ -44,6 +44,7 @@ namespace COMP1004_MidTermAssgnment_200328630
             Character character = Program.character;
 
             character.Race = _selectedRace;
+            
             character.Strength = _StrengthMod.ToString();
             character.Dexterity = _DexterityMod.ToString();
             character.Endurance = _EnduranceMod.ToString();
@@ -65,7 +66,21 @@ namespace COMP1004_MidTermAssgnment_200328630
             RadioButton selectedRace = (RadioButton)sender;
 
             RacialBonusTextBox.Text = "Increase all abilities by 5";
-            
+
+            //possible validation
+            //if (_StrengthMod < 50 || _StrengthMod > 3)
+            //{
+            //    _StrengthMod = _StrengthMod + 5;
+            //}
+            //else if (_StrengthMod > 50)
+            //{
+            //    character.Strength = "50";
+            //}
+            //else if (_StrengthMod < 3)
+            //{
+            //    character.Strength = "3";
+            //}
+
             _StrengthMod = _StrengthMod + 5;
             _DexterityMod = _DexterityMod + 5;
             _EnduranceMod = _EnduranceMod + 5;
@@ -110,6 +125,8 @@ namespace COMP1004_MidTermAssgnment_200328630
             RadioButton selectedRace = (RadioButton)sender;
 
             RacialBonusTextBox.Text = "Increase DEX and INT by 20, Decrease STR by 10";
+          
+    
             _DexterityMod = _DexterityMod + 20;
             _IntellegenceMod = _IntellegenceMod + 20;
             _StrengthMod = _StrengthMod - 10;

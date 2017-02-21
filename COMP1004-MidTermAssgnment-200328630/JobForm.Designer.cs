@@ -99,12 +99,10 @@
             // SoldierRadioButton
             // 
             this.SoldierRadioButton.AutoSize = true;
-            this.SoldierRadioButton.Checked = true;
             this.SoldierRadioButton.Location = new System.Drawing.Point(47, 39);
             this.SoldierRadioButton.Name = "SoldierRadioButton";
             this.SoldierRadioButton.Size = new System.Drawing.Size(73, 21);
             this.SoldierRadioButton.TabIndex = 0;
-            this.SoldierRadioButton.TabStop = true;
             this.SoldierRadioButton.Text = "Soldier";
             this.SoldierRadioButton.UseVisualStyleBackColor = true;
             this.SoldierRadioButton.CheckedChanged += new System.EventHandler(this.SoldierRadioButton_CheckedChanged);

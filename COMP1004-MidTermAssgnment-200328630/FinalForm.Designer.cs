@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.CharacterInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.TitlesLabel = new System.Windows.Forms.Label();
+            this.TitlesTextBox = new System.Windows.Forms.TextBox();
             this.WeightLabel = new System.Windows.Forms.Label();
             this.HeightLabel = new System.Windows.Forms.Label();
             this.AgeLabel = new System.Windows.Forms.Label();
@@ -67,8 +69,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
             this.FontDialog = new System.Windows.Forms.FontDialog();
-            this.TitlesTextBox = new System.Windows.Forms.TextBox();
-            this.TitlesLabel = new System.Windows.Forms.Label();
             this.CharacterInfoGroupBox.SuspendLayout();
             this.CharacterInfoGroupBox2.SuspendLayout();
             this.AbilitiesGroupBox.SuspendLayout();
@@ -94,6 +94,22 @@
             this.CharacterInfoGroupBox.TabIndex = 0;
             this.CharacterInfoGroupBox.TabStop = false;
             this.CharacterInfoGroupBox.Text = "Character Information";
+            // 
+            // TitlesLabel
+            // 
+            this.TitlesLabel.AutoSize = true;
+            this.TitlesLabel.Location = new System.Drawing.Point(10, 143);
+            this.TitlesLabel.Name = "TitlesLabel";
+            this.TitlesLabel.Size = new System.Drawing.Size(46, 17);
+            this.TitlesLabel.TabIndex = 9;
+            this.TitlesLabel.Text = "Titles:";
+            // 
+            // TitlesTextBox
+            // 
+            this.TitlesTextBox.Location = new System.Drawing.Point(85, 138);
+            this.TitlesTextBox.Name = "TitlesTextBox";
+            this.TitlesTextBox.Size = new System.Drawing.Size(100, 22);
+            this.TitlesTextBox.TabIndex = 8;
             // 
             // WeightLabel
             // 
@@ -176,7 +192,7 @@
             // HPLabel
             // 
             this.HPLabel.AutoSize = true;
-            this.HPLabel.Location = new System.Drawing.Point(22, 134);
+            this.HPLabel.Location = new System.Drawing.Point(43, 133);
             this.HPLabel.Name = "HPLabel";
             this.HPLabel.Size = new System.Drawing.Size(96, 17);
             this.HPLabel.TabIndex = 5;
@@ -185,7 +201,7 @@
             // RaceLabel
             // 
             this.RaceLabel.AutoSize = true;
-            this.RaceLabel.Location = new System.Drawing.Point(73, 82);
+            this.RaceLabel.Location = new System.Drawing.Point(94, 82);
             this.RaceLabel.Name = "RaceLabel";
             this.RaceLabel.Size = new System.Drawing.Size(45, 17);
             this.RaceLabel.TabIndex = 4;
@@ -194,7 +210,7 @@
             // JobLabel
             // 
             this.JobLabel.AutoSize = true;
-            this.JobLabel.Location = new System.Drawing.Point(83, 33);
+            this.JobLabel.Location = new System.Drawing.Point(104, 33);
             this.JobLabel.Name = "JobLabel";
             this.JobLabel.Size = new System.Drawing.Size(35, 17);
             this.JobLabel.TabIndex = 3;
@@ -372,14 +388,14 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -394,7 +410,7 @@
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
             this.fontToolStripMenuItem.Text = "&Font";
             this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
@@ -409,7 +425,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -426,22 +442,6 @@
             this.FontDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FontDialog.MaxSize = 18;
             this.FontDialog.MinSize = 10;
-            // 
-            // TitlesTextBox
-            // 
-            this.TitlesTextBox.Location = new System.Drawing.Point(85, 128);
-            this.TitlesTextBox.Name = "TitlesTextBox";
-            this.TitlesTextBox.Size = new System.Drawing.Size(100, 22);
-            this.TitlesTextBox.TabIndex = 8;
-            // 
-            // TitlesLabel
-            // 
-            this.TitlesLabel.AutoSize = true;
-            this.TitlesLabel.Location = new System.Drawing.Point(10, 133);
-            this.TitlesLabel.Name = "TitlesLabel";
-            this.TitlesLabel.Size = new System.Drawing.Size(46, 17);
-            this.TitlesLabel.TabIndex = 9;
-            this.TitlesLabel.Text = "Titles:";
             // 
             // FinalForm
             // 
